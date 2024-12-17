@@ -9,7 +9,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="bg-blue-500 text-white">
+    <nav className=" text-white ">
       {/* Header Content */}
       <div className="flex items-center justify-between px-4 py-3 md:px-8">
         <div className="text-2xl font-bold">Logo</div>
@@ -21,7 +21,15 @@ const Header = () => {
           <li className="hover:text-gray-200 cursor-pointer">Services</li>
           <li className="hover:text-gray-200 cursor-pointer">Contact</li>
         </ul>
-
+        <button
+            className="relative  text-white font-semibold py-3 px-8  bg-gradient-to-r from-[#BC96F5] via-[#824FAD] to-[#4639BC] hover:from-[#6F26FF] hover:to-[#BC96F5] transition-all duration-500"
+            style={{
+              clipPath: "polygon(15% 20%, 96% 22%, 94% 57%, 83% 85%, 5% 80%, 7% 45%)",
+              boxShadow: "0 0 0 4px #5D22FF", // Simulated border with box-shadow
+            }}
+          >
+          Sell Your Coin
+          </button>
         {/* Mobile Toggle Button */}
         <button
           onClick={toggleMenu}
