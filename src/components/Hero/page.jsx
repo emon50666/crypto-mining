@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section className="relative flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-10 md:px-8 lg:px-16">
+    <section className="relative flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-10 md:px-8 lg:px-8">
       {/* Background Gradient */}
       <div
         className="absolute inset-0 z-0"
@@ -24,22 +24,23 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center lg:text-left max-w-md text-white">
-        <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6">Navigate the Future of 
-          Trading with <span className="bg-gradient-to-r from-[#824FAD] via-[#4639BC] to-[#BC96F5] bg-clip-text text-transparent">
+      <div className="relative z-10   mt-16 lg:mt-10
+      text-center lg:text-left max-w-md text-[#ffe6fe]">
+        <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6"> <span className="bg-gradient-to-r from-[#4639BC] via-[rgb(254,229,134)] to-[#BC96F5] bg-clip-text text-transparent">Navigate</span> the Future of 
+          Trading with <span className="bg-gradient-to-r from-[#BC96F5] via-[rgb(254,229,134)] to-[#4639BC] bg-clip-text text-transparent">
   Crypto Vision
 </span>
   </h1>
-        <p className="mb-6">
+        <p className="mb-6 text-[#e3dcffb8]">
           Single.earth Makes Nature Protection Profitable And Accessible For Everyone With Nature-backed Merit Tokens.
         </p>
-        <div className="flex gap-3  ">
+        <div className="lg:flex  gap-3  ">
           {/* Contact Us Button */}
           <button
-            className="relative text-white font-semibold py-3 px-8 bg-gradient-to-r
+            className="relative text-white font-semibold py-5   px-8 bg-gradient-to-r 
              from-[#824FAD] via-[#4639BC] to-[#BC96F5] hover:from-[#6F26FF] hover:to-[#BC96F5]  transition-all duration-500"
             style={{
-              clipPath: "polygon(15% 20%, 96% 22%, 96% 57%,83% 85%, 5% 80%, 7% 45%)",
+              clipPath: "polygon(15% 20%, 96% 22%, 96% 57%, 83% 85%, 5% 80%, 7% 45%)",
             }}
           >
               Sign up for free
@@ -48,8 +49,9 @@ export default function HeroSection() {
           {/* Learn More Button */}
 
           <button
-            className="relative  text-white font-semibold py-3 px-8 
-             bg-gradient-to-r from-[#211C32] via-[#824FAD] to-[#110E1B] hover:from-[#6F26FF] 
+            className="relative  text-white  font-semibold py-5 px-8 
+            bg-gradient-to-r 
+             from-[#824FAD] via-[#4639BC] to-[#BC96F5] hover:from-[#6F26FF] 
              hover:to-[#BC96F5] transition-all duration-500"
             style={{
               clipPath: "polygon(15% 20%, 96% 22%, 96% 57%, 83% 85%, 5% 80%, 7% 45%)",
@@ -63,13 +65,13 @@ export default function HeroSection() {
 
       </div>
       {/* Right Image */}
-      <div className="relative z-10 w-full max-w-sm lg:max-w-md ">
+      <div className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
         <Image
           src="/nep.png"
           alt="Right Side Image"
           width={500}
           height={500}
-          className="w-full h-auto "
+          className="w-full h-auto  "
           priority
         />
       </div>

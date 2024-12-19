@@ -1,5 +1,8 @@
+import AboutSection from "@/components/About/page";
 import Header from "@/components/Header/page";
 import Hero from "@/components/Hero/page";
+import Logo from "@/components/Logo/page";
+import Market from "@/components/Market/page";
 
 
 
@@ -11,7 +14,10 @@ export default function Home() {
       </div>
     <div className=""> 
     <Hero/>
+    <Logo/>
     </div>
+    <AboutSection/>
+    <Market/>
     </div>
   );
 }
