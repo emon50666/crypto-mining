@@ -1,4 +1,7 @@
 import AboutSection from "@/components/About/page";
+import Business from "@/components/Business/page";
+
+
 import Header from "@/components/Header/page";
 import Hero from "@/components/Hero/page";
 import Logo from "@/components/Logo/page";
@@ -18,6 +21,7 @@ export default function Home() {
     </div>
     <AboutSection/>
     <Market/>
+     <Business/>
     </div>
   );
 }

@@ -29,7 +29,7 @@ const Header = () => {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex space-x-6 font-normal text-[#e9cfff]">
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Buy / Sell</li>
-          <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Grow</li>
+          <a href="#grow" className="hover:text-[#BC96F5] hover:underline cursor-pointer">Grow</a>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Markets</li>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Business</li>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Support</li>
@@ -67,7 +67,7 @@ const Header = () => {
         </div>
         <ul className="flex flex-col items-center space-y-4 mt-10 font-normal text-[#e9cfff]">
         <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Buy / Sell</li>
-          <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Grow</li>
+          <a href="#grow" className="hover:text-[#BC96F5] hover:underline cursor-pointer">Grow</a>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Markets</li>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Business</li>
           <li className="hover:text-[#BC96F5] hover:underline cursor-pointer">Support</li>
