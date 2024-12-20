@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 export default function Trad() {
- 
+
 
     return (
         <section id='grow' className="relative pt-16 pb-10">
@@ -15,14 +15,14 @@ export default function Trad() {
 
             {/* Overlay Image */}
             <div className="absolute inset-0 z-0">
-            <Image
-        src="/frame.png"
-        alt="Overlay Background"
-        layout="fill"
-        
-        priority
-        className="opacity-10 flex items-center justify-center"
-    />
+                <Image
+                    src="/frame.png"
+                    alt="Overlay Background"
+                    layout="fill"
+
+                    priority
+                    className="opacity-10 flex items-center justify-center"
+                />
             </div>
 
             {/* Content */}
@@ -30,16 +30,75 @@ export default function Trad() {
                 <div className="mx-w-lg">
                     <h4 className='mb-1 text-sm'>What Sets Us <span className={'text-[#824FAD] '} >Apart</span></h4>
                     <h2 className="text-3xl mb-2 font-semibold text-[#ffe6fe]">
-                    Trade, Secure, and Stay <br /> Informed with Crypto Flow
+                        Trade, Secure, and Stay <br /> Informed with Crypto Flow
                     </h2>
-                   
+
                 </div>
 
                 {/* Centered Table with Large Width */}
-                <div className="justify-center mx-auto">
-                
+                <div className="max-w-[800px] mx-auto mt-8">
+                    <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-4 px-3 lg:px-0 place-items-center">
+                        <div className="text-center  lg:border-t-4 rounded-t-xl  bg-gradient-to-r 
+             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
+             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 p-4 shadow shadow-[#834fad75] ">
+                            <Image
+                                src="/sec1.png"
+                                alt="Right Side Image"
+                                width={100}
+                                height={100}
+                                className="max-w-[40px] h-[40px]"
+                                priority
+                            />
+                            <div className="text-start">
+                                <h1 className="text-lg text-gray-100">Seamless Trading</h1>
+                                <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
+                                    Experience easy and efficient trading with our user-friendly interface and quick buy/sell options.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="text-center  lg:border-b-4 bg-gradient-to-r 
+             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
+             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-b-xl  p-4 shadow shadow-[#834fad75] ">
+                            <Image
+                                src="/sec2.png"
+                                alt="Right Side Image"
+                                width={100}
+                                height={100}
+                                className="max-w-[40px] h-[40px]"
+                                priority
+                            />
+                            <div className="text-start">
+                                <h1 className="text-lg text-gray-100">Secure Wallets</h1>
+                                <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
+                                    Trust in the security of your digital assets with our robust wallet integration and advanced security measures.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="text-center  lg:border-t-4 bg-gradient-to-r 
+             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
+             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-t-xl p-4 shadow shadow-[#834fad75] ">
+                            <Image
+                                src="/sec3.png"
+                                alt="Right Side Image"
+                                width={100}
+                                height={100}
+                                className="max-w-[40px] h-[40px]"
+                                priority
+                            />
+                            <div className="text-start">
+                                <h1 className="text-lg text-gray-100">Real-Time Insights</h1>
+                                <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
+                                    Stay ahead of the market with access to real-time data, charts, and trends for informed decision-making.
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
+
             </div>
         </section>
     );
