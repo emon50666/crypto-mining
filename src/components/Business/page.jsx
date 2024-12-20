@@ -14,8 +14,8 @@ export default function Business() {
     
 
       {/* Content */}
-      <div className=" z-10    pr-5
-      text-center lg:text-left max-w-2xl text-[#ffe6fe]"> <h1 className="text-lg md:text-3xl font-semibold  capitalize mb-6"> Why Choose Crypto Flow </h1>
+      <div className=" z-10 
+      text-start max-w-2xl text-[#ffe6fe]"> <h1 className="text-lg md:text-3xl font-semibold  capitalize mb-6"> Why Choose Crypto Flow </h1>
       <div className='flex gap-4'>
       <Image
           src="/image.png"
@@ -25,7 +25,7 @@ export default function Business() {
           className="  max-w-[30px] h-[30px]  "
           priority
         />
-        <div>
+        <div className='text-start'>
        <h1 className='text-lg text-gray-100 '>Fortified Security Protocols</h1>
        <p className='text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2'>Your security is our topmost concern. We employ state-of-the-art security protocols, setting an industry standard to safeguard your assets and personal information.</p>
         </div>
@@ -39,7 +39,7 @@ export default function Business() {
           className="  max-w-[30px] h-[30px]  "
           priority
         />
-        <div>
+     <div className='text-start'>
        <h1 className='text-lg text-gray-100 '>Performance-Driven Technology</h1>
        <p className='text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2'>Our platform harnesses cutting-edge technology, delivering unparalleled performance and ensuring you have the tools needed for a seamless trading experience.</p>
         </div>
@@ -53,7 +53,7 @@ export default function Business() {
           className="  max-w-[30px] h-[30px]  "
           priority
         />
-        <div>
+         <div className='text-start'>
        <h1 className='text-lg text-gray-100 '>Responsive Customer Support</h1>
        <p className='text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2'>Experience unmatched support with our responsive customer service team. We're here to address your inquiries promptly, ensuring a smooth and hassle-free experience.</p>
         </div>
@@ -67,7 +67,7 @@ export default function Business() {
           className="  max-w-[30px] h-[30px]  "
           priority
         />
-        <div>
+        <div className='text-start'>
        <h1 className='text-lg text-gray-100 '>Innovative Trading Features</h1>
        <p className='text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2'>Stay ahead of the market curve with innovative trading features. Our platform introduces tools that empower you to make informed decisions and optimize your investment strategy.</p>
         </div>
@@ -81,7 +81,7 @@ export default function Business() {
           className="  max-w-[30px] h-[30px]  "
           priority
         />
-        <div>
+       <div className='text-start'>
        <h1 className='text-lg text-gray-100 '>Transparent Fee Structure</h1>
        <p className='text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2'>Say goodbye to hidden fees. Our transparent fee structure ensures you are fully informed about costs, allowing you to manage your investments with clarity and confidence.</p>
         </div>

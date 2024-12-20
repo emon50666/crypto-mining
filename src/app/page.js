@@ -6,6 +6,7 @@ import Header from "@/components/Header/page";
 import Hero from "@/components/Hero/page";
 import Logo from "@/components/Logo/page";
 import Market from "@/components/Market/page";
+import Support from "@/components/Support/page";
 import Trad from "@/components/Trade/page";
 
 
@@ -24,6 +25,7 @@ export default function Home() {
     <Market/>
      <Business/>
      <Trad/>
+     <Support/>
     </div>
   );
 }

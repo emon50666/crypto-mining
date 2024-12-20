@@ -32,13 +32,14 @@ export default function Market() {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 m-auto text-center text-[#ffe6fe]">
-                <div className="mx-w-lg">
-                    <h2 className="text-3xl mb-2 font-semibold text-[#ffe6fe]">
+            <div className="relative px-1 z-10 m-auto text-center text-[#ffe6fe]">
+                <div className="mx-w-lg ">
+                    <h2 className="text-xl lg:text-3xl xl:text-3xl 2xl:text-3xl mb-2 font-semibold text-[#ffe6fe]">
                         Buy and sell with the lowest <br /> fees in the industry
                     </h2>
-                    <p className="text-md text-[#e3dcffb8]">
-                        Trade effortlessly with the lowest fees in the industry, <br /> maximizing your profits on every transaction.
+                    <p className="text-[13px] lg:text-lg md:text-lg xl:text-lg text-[#e3dcffb8]">
+                        Trade effortlessly with the lowest fees in the industry, 
+                        <p> maximizing your profits on every transaction.</p>
                     </p>
                 </div>
 
