@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Trad() {
+export default function World() {
 
 
     return (
@@ -14,101 +14,107 @@ export default function Trad() {
             ></div>
 
             {/* Overlay Image */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute   inset-0 z-0">
                 <Image
-                    src="/frame.png"
+                    src="/world.png"
                     alt="Overlay Background"
                     layout="fill"
+                  
 
                     priority
-                    className="opacity-10 flex items-center justify-center"
+                    className=" flex items-center   justify-center"
                 />
             </div>
 
             {/* Content */}
             <div className="relative z-10 m-auto text-center text-[#ffe6fe]">
                 <div className="mx-w-lg">
-                    <h4 className='mb-1 text-sm'>What Sets Us <span className={'text-[#824FAD] '} >Apart</span></h4>
+                    <h4 className='mb-1 text-sm'>Proven Track  <span className={'text-[#824FAD] '} >Record</span></h4>
                     <h2 className="text-2xl lg:text-3xl xl:text-3xl 2xl:text-3xl mb-2 font-semibold text-[#ffe6fe]">
-                        Trade, Secure, and Stay <br /> Informed with Crypto Flow
+                    Connecting Traders Worldwide 
                     </h2>
 
                 </div>
 
                 {/* Centered Table with Large Width */}
-                <div className=" mx-auto mt-8 lg:max-w-[1100px] xl:px-8 w-full ">
-                    <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-4 px-3 lg:px-0 place-items-center">
-                        <div className="text-center  lg:border-t-4 rounded-t-xl  bg-gradient-to-r 
-             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
-             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 p-4 shadow shadow-[#834fad75] ">
+                <div className=" mx-auto mt-8 lg:max-w-[1100px] w-full xl:px-8 ">
+                    <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 px-3 lg:px-0 place-items-center">
+                        <div className="text-center  mt-0 lg:mt-48 xl:mt-48 lg:-rotate-12 xl:-rotate-12  rounded-t-xl bg-[#4639BC]/50  p-4 ">
+                            <div className='flex gap-2'>
                             <Image
-                                src="/sec1.png"
+                                src="/ema.png"
                                 alt="Right Side Image"
                                 width={100}
                                 height={100}
                                 className="max-w-[40px] h-[40px]"
                                 priority
                             />
+                            <h1 className="text-lg text-gray-100">Emma Hatson</h1>
+                            </div>
+                            
                             <div className="text-start">
-                                <h1 className="text-lg text-gray-100">Seamless Trading</h1>
+                                
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                    Experience easy and efficient trading with our user-friendly interface and quick buy/sell options.
+                                Kudos to Crypto flow for simplifying crypto trading! The platform's user-friendly interface and advanced tools make it a standout choice.  
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center  lg:border-b-4 bg-gradient-to-r 
-             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
-             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-b-xl  p-4 shadow shadow-[#834fad75] ">
+                        <div className="text-center  mt-0 lg:bottom-48 xl:bottom-48 lg:-rotate-6 xl:-rotate-6  rounded-t-xl bg-[#211C32]/60  p-4">
+                        <div className='flex gap-2'>
                             <Image
-                                src="/sec2.png"
+                                src="/ema2.png"
                                 alt="Right Side Image"
                                 width={100}
                                 height={100}
                                 className="max-w-[40px] h-[40px]"
                                 priority
                             />
+                            <h1 className="text-lg text-gray-100">Alex Stuard</h1>
+                            </div>
                             <div className="text-start  ">
-                                <h1 className="text-lg text-gray-100">Secure Wallets</h1>
+                               
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                    Trust in the security of your digital assets with our robust wallet integration and advanced security measures.
+                                Crypto flow has transformed my crypto experience! The platform's intuitive design and robust security features make it my top choice for trading.
                                 </p>
                             </div>
                         </div>
 
-                        <div className="text-center  lg:border-t-4 bg-gradient-to-r 
-             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
-             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-t-xl p-4 shadow shadow-[#834fad75] ">
+                        <div className="text-center mt-0 lg:bottom-48 xl:bottom-48 lg:rotate-6 xl:rotate-6  rounded-t-xl bg-[#824FAD]/60  p-4 ">
+                        <div className='flex gap-2'>
                             <Image
-                                src="/sec3.png"
+                                src="/ema3.png"
                                 alt="Right Side Image"
                                 width={100}
                                 height={100}
                                 className="max-w-[40px] h-[40px]"
                                 priority
                             />
+                            <h1 className="text-lg text-gray-100">Chris Daniel </h1>
+                            </div>
                             <div className="text-start">
-                                <h1 className="text-lg text-gray-100">Real-Time Insights</h1>
+                                
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                    Stay ahead of the market with access to real-time data, charts, and trends for informed decision-making.
+                                Impressed with Crypto Vision's seamless trading process! The platform's efficiency and reliability stand out in the crypto market.
 
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center  lg:border-b-4 bg-gradient-to-r 
-             from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
-             hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-t-xl p-4 shadow shadow-[#834fad75] ">
+                        <div className="text-center mt-0 lg:mt-48 xl:mt-48 lg:rotate-12 xl:rotate-12  rounded-t-xl bg-[#556EAF]/60  p-4">
+                        <div className='flex gap-2'>
                             <Image
-                                src="/sec3.png"
+                                src="/ema4.png"
                                 alt="Right Side Image"
                                 width={100}
                                 height={100}
                                 className="max-w-[40px] h-[40px]"
                                 priority
                             />
+                            <h1 className="text-lg text-gray-100">Mike William</h1>
+                            </div>
                             <div className="text-start">
-                                <h1 className="text-lg text-gray-100">Access All Crypto Coin</h1>
+                            
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                    Explore the world of cryptocurrency with ease! Access all crypto coins in one place, stay updated on market trends.
+                                Crypto Vision delivers a stellar trading experience! The platform's features, coupled with its reliability, have exceeded my expectations.
 
                                 </p>
                             </div>

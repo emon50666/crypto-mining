@@ -8,6 +8,7 @@ import Logo from "@/components/Logo/page";
 import Market from "@/components/Market/page";
 import Support from "@/components/Support/page";
 import Trad from "@/components/Trade/page";
+import World from "@/components/World/page";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
      <Business/>
      <Trad/>
      <Support/>
+     <World/>
     </div>
   );
 }
