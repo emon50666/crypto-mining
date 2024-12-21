@@ -12,16 +12,10 @@ export default {
         foreground: "var(--foreground)",
         
       },
-      animation: {
-        'magic-border': 'magic-border 3s linear infinite',
-      },
-      keyframes: {
-        'magic-border': {
-          '0%': { backgroundPosition: '0% 50%' },
-          '100%': { backgroundPosition: '100% 50%' },
-        },
-      },
+    
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('tailwind-scrollbar'),
+  ],
 };

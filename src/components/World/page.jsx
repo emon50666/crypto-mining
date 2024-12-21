@@ -94,7 +94,7 @@ export default function World() {
                             <div className="text-start">
                                 
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                Impressed with Crypto Vision's seamless trading process! The platform's efficiency and reliability stand out in the crypto market.
+                                Impressed with Crypto flow's seamless trading process! The platform's efficiency and reliability stand out in the crypto market.
 
                                 </p>
                             </div>
@@ -114,7 +114,7 @@ export default function World() {
                             <div className="text-start">
                             
                                 <p className="text-[#e3dcffb8] text-[13px] lg:text-[15px] mb-2">
-                                Crypto Vision delivers a stellar trading experience! The platform's features, coupled with its reliability, have exceeded my expectations.
+                                Crypto flow delivers a stellar trading experience! The platform's features, coupled with its reliability, have exceeded my expectations.
 
                                 </p>
                             </div>

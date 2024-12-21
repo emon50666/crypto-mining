@@ -1,5 +1,6 @@
 import AboutSection from "@/components/About/page";
 import Business from "@/components/Business/page";
+import ContactSection from "@/components/Contact/page";
 
 
 import Header from "@/components/Header/page";
@@ -28,6 +29,7 @@ export default function Home() {
      <Trad/>
      <Support/>
      <World/>
+     <ContactSection/>
     </div>
   );
 }

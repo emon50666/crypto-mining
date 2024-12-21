@@ -26,8 +26,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10   mt-16 lg:mt-10
       text-center lg:text-left max-w-md text-[#ffe6fe]">
-        <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6"> <span className="bg-gradient-to-r from-[#4639BC] via-[rgb(254,229,134)] to-[#BC96F5] bg-clip-text text-transparent">Navigate</span> the Future of 
-          Trading with <span className="bg-gradient-to-r from-[#BC96F5] via-[rgb(254,229,134)] to-[#4639BC] bg-clip-text text-transparent">
+        <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6"> <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD] bg-clip-text text-transparent">Navigate</span> the Future of 
+          Trading with <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD]  bg-clip-text text-transparent">
   Crypto Vision
 </span>
   </h1>
