@@ -10,6 +10,9 @@ import Market from "@/components/Market/page";
 import Support from "@/components/Support/page";
 import Trad from "@/components/Trade/page";
 import World from "@/components/World/page";
+import Footer from "@/components/Footer/page";
+import AutoPlayVideo from "@/components/Video/page";
+
 
 
 
@@ -27,9 +30,12 @@ export default function Home() {
     <Market/>
      <Business/>
      <Trad/>
+     <AutoPlayVideo/>
      <Support/>
      <World/>
      <ContactSection/>
+     <Footer/>
+     
     </div>
   );
 }

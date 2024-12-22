@@ -10,7 +10,7 @@ export default function Market() {
     ];
 
     return (
-        <section id='grow' className="relative pt-16 pb-10">
+        <section id='market' className="relative pt-16 pb-10">
             {/* Background */}
             <div
                 className="absolute inset-0 z-0"

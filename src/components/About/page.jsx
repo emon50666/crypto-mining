@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutSection() {
     return (
-        <section className="relative pt-28 grid-flow-row grid lg:grid-cols-2 md:grid-cols-2   px-4 py-10 md:px-8 ">
+        <section id='about' className="relative pt-28 grid-flow-row grid lg:grid-cols-2 md:grid-cols-2   px-4 py-10 md:px-8 ">
             {/* Background Gradient */}
             <div className="relative z-10   w-full max-w-sm lg:max-w-md ">
                 <Image

@@ -7,7 +7,7 @@ export default function ContactSection() {
 
 
     return (
-        <section id='grow' className="relative pt-16 pb-10">
+        <section id='support' className="relative pt-16 pb-10">
             {/* Background */}
             <div
                 className="absolute inset-0 z-0"
@@ -39,11 +39,12 @@ export default function ContactSection() {
                 </div>
 
                 {/* Centered Table with Large Width */}
-                <div className='flex justify-center text-start mx-auto gap-14 mt-9 '>
+                <div className='lg:flex  md:flex justify-center text-start mx-auto lg:gap-24 md:gap-12 px-2 mt-9 '>
                     <div className="">
                         <h1 className="text-2xl pb-5 font-semibold  ">
                             Get In Touch
                         </h1>
+                        
                         <div className="justify-center mx-auto space-y-3">
                             <div className="flex items-center gap-2 mb-3">
                                 <Image
@@ -68,7 +69,7 @@ export default function ContactSection() {
                                     priority
                                 />
                                 <a href="mailto:info@cryptovision.com" className="text-md text-[#e3dcffb8]">
-                                    info@cryptovision.com
+                                    info@cryptoflow.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-2">
@@ -83,7 +84,7 @@ export default function ContactSection() {
                                 <span className="text-md text-[#e3dcffb8]">FAQs for Quick Help</span>
                             </div>
                         </div>
-                        <div className="flex space-x-4 mt-4 text-3xl text-[#824FAD] ">
+                        <div className="flex space-x-4 mt-4 mb-4 text-3xl text-[#824FAD] ">
                             {/* Facebook */}
                             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                                 <FaFacebook className="hover:text-blue-700" />
@@ -110,52 +111,52 @@ export default function ContactSection() {
                         <form action="" className='text-start'>
                             <form>
                                 {/* Name Field */}
-                                <div className="mb-4 w-96 ">
+                                <div className="mb-4  w-full lg:w-96 ">
 
                                     <input
                                         type="text"
                                         id="name"
                                         name="name"
-                                        className="mt-1 block w-full px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
+                                        className="mt-1 block w-full lg:w-96  px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
                                         placeholder=" Your Name"
                                         required
                                     />
                                 </div>
 
                                 {/* Email Field */}
-                                <div className="mb-4 w-96">
+                                <div className="mb-4 w-full lg:w-96 ">
 
                                     <input
                                         type="email"
                                         id="email"
                                         name="email"
-                                        className="mt-1 block w-full px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
+                                        className="mt-1 block w-full lg:w-96  px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
                                         placeholder=" Your Email"
                                         required
                                     />
                                 </div>
 
                                 {/* Phone Number Field */}
-                                <div className="mb-4 w-96">
+                                <div className="mb-4 w-full lg:w-96 ">
 
                                     <input
                                         type="tel"
                                         id="phone"
                                         name="phone"
-                                        className="mt-1 block w-full px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
+                                        className="mt-1 block w-full lg:w-96  px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
                                         placeholder=" Phone Number"
                                         required
                                     />
                                 </div>
 
                                 {/* Message Field */}
-                                <div className="mb-1 w-96">
+                                <div className="mb-1 w-full lg:w-96 ">
 
                                     <textarea
                                         id="message"
                                         name="message"
                                         rows="4"
-                                        className="mt-1 block w-full px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
+                                        className="mt-1 block w-full lg:w-96  px-4 py-2 outline-none border  border-[#4639BC] focus:outline-none hover:bg-[#824FAD]/10 bg-[#4639BC]/10 rounded-md shadow-sm  sm:text-sm"
                                         placeholder=" Message"
                                         required
                                     ></textarea>
