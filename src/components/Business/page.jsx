@@ -1,6 +1,19 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 export default function Business() {
+
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Easing type
+        once: true, // Whether animation should happen only once
+      });
+    }, []);
+  
   return (
     <section className="relative flex flex-col-reverse lg:flex-row gap-4 justify-between px-4 py-10 md:px-8 lg:px-8">
       {/* Background Gradient */}
@@ -14,7 +27,7 @@ export default function Business() {
     
 
       {/* Content */}
-      <div className=" z-10 
+      <div data-aos="fade-up-right" className=" z-10 
       text-start max-w-2xl text-[#ffe6fe]"> <h1 className="text-lg md:text-3xl font-semibold  capitalize mb-6"> Why Choose Crypto Flow </h1>
       <div className='flex gap-4'>
       <Image
@@ -88,7 +101,7 @@ export default function Business() {
       </div>
       </div>
       {/* Right Image */}
-      <div className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
+      <div data-aos="fade-up-left" className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
         <Image
           src="/group.png"
           alt="Right Side Image"

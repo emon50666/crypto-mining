@@ -1,7 +1,18 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 export default function World() {
 
+   useEffect(() => {
+              AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                easing: 'ease-in-out', // Easing type
+                once: true, // Whether animation should happen only once
+              });
+            }, []);
 
     return (
         <section id='grow' className="relative pt-16 pb-10">
@@ -39,7 +50,7 @@ export default function World() {
                 {/* Centered Table with Large Width */}
                 <div className=" mx-auto mt-8 lg:max-w-[1100px] w-full xl:px-8 ">
                     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8 px-3 lg:px-0 place-items-center">
-                        <div className="text-center  mt-0 lg:mt-48 xl:mt-48 lg:-rotate-12 xl:-rotate-12  rounded-t-xl bg-[#4639BC]/50  p-4 ">
+                        <div data-aos="fade-right" className="text-center  mt-0 lg:mt-48 xl:mt-48 lg:-rotate-12 xl:-rotate-12  rounded-t-xl bg-[#4639BC]/50  p-4 ">
                             <div className='flex gap-2'>
                             <Image
                                 src="/ema.png"
@@ -59,7 +70,7 @@ export default function World() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center  mt-0 lg:bottom-48 xl:bottom-48 lg:-rotate-6 xl:-rotate-6  rounded-t-xl bg-[#211C32]/60  p-4">
+                        <div data-aos="zoom-in" className="text-center  mt-0 lg:bottom-48 xl:bottom-48 lg:-rotate-6 xl:-rotate-6  rounded-t-xl bg-[#211C32]/60  p-4">
                         <div className='flex gap-2'>
                             <Image
                                 src="/ema2.png"
@@ -79,7 +90,7 @@ export default function World() {
                             </div>
                         </div>
 
-                        <div className="text-center mt-0 lg:bottom-48 xl:bottom-48 lg:rotate-6 xl:rotate-6  rounded-t-xl bg-[#824FAD]/60  p-4 ">
+                        <div data-aos="zoom-in-up" className="text-center mt-0 lg:bottom-48 xl:bottom-48 lg:rotate-6 xl:rotate-6  rounded-t-xl bg-[#824FAD]/60  p-4 ">
                         <div className='flex gap-2'>
                             <Image
                                 src="/ema3.png"
@@ -99,7 +110,7 @@ export default function World() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center mt-0 lg:mt-48 xl:mt-48 lg:rotate-12 xl:rotate-12  rounded-t-xl bg-[#556EAF]/60  p-4">
+                        <div data-aos="fade-left" className="text-center mt-0 lg:mt-48 xl:mt-48 lg:rotate-12 xl:rotate-12  rounded-t-xl bg-[#556EAF]/60  p-4">
                         <div className='flex gap-2'>
                             <Image
                                 src="/ema4.png"

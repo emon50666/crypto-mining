@@ -1,7 +1,18 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 export default function Trad() {
 
+useEffect(() => {
+          AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Easing type
+            once: true, // Whether animation should happen only once
+          });
+        }, []);
 
     return (
         <section id='service' className="relative pt-16 pb-10">
@@ -38,7 +49,7 @@ export default function Trad() {
                 {/* Centered Table with Large Width */}
                 <div className=" mx-auto mt-8 lg:max-w-[1100px] xl:px-8 w-full ">
                     <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-4 px-3 lg:px-0 place-items-center">
-                        <div className="text-center  lg:border-t-4 rounded-t-xl  bg-gradient-to-r 
+                        <div data-aos="flip-left" className="text-center  lg:border-t-4 rounded-t-xl  bg-gradient-to-r 
              from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
              hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 p-4 shadow shadow-[#834fad75] ">
                             <Image
@@ -56,7 +67,7 @@ export default function Trad() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center  lg:border-b-4 bg-gradient-to-r 
+                        <div data-aos="flip-right" className="text-center  lg:border-b-4 bg-gradient-to-r 
              from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
              hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-b-xl  p-4 shadow shadow-[#834fad75] ">
                             <Image
@@ -75,7 +86,7 @@ export default function Trad() {
                             </div>
                         </div>
 
-                        <div className="text-center  lg:border-t-4 bg-gradient-to-r 
+                        <div data-aos="flip-up" className="text-center  lg:border-t-4 bg-gradient-to-r 
              from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
              hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-t-xl p-4 shadow shadow-[#834fad75] ">
                             <Image
@@ -94,7 +105,7 @@ export default function Trad() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-center  lg:border-b-4 bg-gradient-to-r 
+                        <div data-aos="flip-down" className="text-center  lg:border-b-4 bg-gradient-to-r 
              from-[#824FAD]/20 via-[#4639BC]/20 to-[#BC96F5]/20 hover:from-[#6F26FF]/30 
              hover:to-[#824FAD]/30 transition-all duration-500 border-[#824FAD]/90 rounded-t-xl p-4 shadow shadow-[#834fad75] ">
                             <Image

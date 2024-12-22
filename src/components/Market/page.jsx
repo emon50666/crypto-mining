@@ -1,6 +1,20 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 export default function Market() {
+
+      useEffect(() => {
+          AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            easing: 'ease-in-out', // Easing type
+            once: true, // Whether animation should happen only once
+          });
+        }, []);
+
+
     const data = [
         { name: "Bitcoin", symbol: "BTC", price: "$56,290.30", change: "+1.68%", graph: "/vector1.png", trade: "Trade Now →", changeColor: "text-green-400" },
         { name: "Ethereum", symbol: "ETH", price: "$4,284.81", change: "+4.36%", graph: "/vector2.png", trade: "Trade Now →", changeColor: "text-green-400" },
@@ -33,7 +47,7 @@ export default function Market() {
 
             {/* Content */}
             <div className="relative px-1 z-10 m-auto text-center text-[#ffe6fe]">
-                <div className="mx-w-lg ">
+                <div className="mx-w-lg " data-aos="fade-down">
                     <h2 className="text-xl lg:text-3xl xl:text-3xl 2xl:text-3xl mb-2 font-semibold text-[#ffe6fe]">
                         Buy and sell with the lowest <br /> fees in the industry
                     </h2>
@@ -44,7 +58,7 @@ export default function Market() {
                 </div>
 
                 {/* Centered Table with Large Width */}
-                <div className="md:overflow-hidden overflow-x-auto bg-gradient-to-r from-[#824FAD]/20 to-[#211C35]/40 p-6 rounded-lg shadow-lg mx-auto mt-10 w-full max-w-3xl">
+                <div data-aos="fade-up" className="md:overflow-hidden overflow-x-auto bg-gradient-to-r from-[#824FAD]/20 to-[#211C35]/40 p-6 rounded-lg shadow-lg mx-auto mt-10 w-full max-w-3xl">
                     <table className="w-full text-left min-w-[600px]">
                         <thead>
                             <tr className="text-gray-400">

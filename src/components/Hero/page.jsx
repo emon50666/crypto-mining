@@ -1,6 +1,18 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
+
 export default function HeroSection() {
+  useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration in milliseconds
+        easing: 'ease-in-out', // Easing type
+        once: true, // Whether animation should happen only once
+      });
+    }, []);
   return (
     <section className="relative flex flex-col-reverse lg:flex-row items-center justify-between px-4 py-10 md:px-8 lg:px-8">
       {/* Background Gradient */}
@@ -24,7 +36,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10   mt-16 lg:mt-10
+      <div data-aos="fade-right" className="relative z-10   mt-16 lg:mt-10 
       text-center lg:text-left max-w-md text-[#ffe6fe]">
         <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6"> <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD] bg-clip-text text-transparent">Navigate</span> the Future of 
           Trading with <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD]  bg-clip-text text-transparent">
@@ -34,7 +46,7 @@ export default function HeroSection() {
         <p className="mb-6 text-[#e3dcffb8]">
           Single.earth Makes Nature Protection Profitable And Accessible For Everyone With Nature-backed Merit Tokens.
         </p>
-        <div className="lg:flex  gap-3  ">
+        <div className="lg:flex  gap-3  "  >
           {/* Contact Us Button */}
           <button
             className="relative text-white font-semibold py-5   px-8 bg-gradient-to-r 

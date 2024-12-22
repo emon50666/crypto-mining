@@ -1,18 +1,24 @@
+'use client'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Image from 'next/image';
 
 export default function AboutSection() {
+
+    useEffect(() => {
+              AOS.init({
+                duration: 1000, // Animation duration in milliseconds
+                easing: 'ease-in-out', // Easing type
+                once: true, // Whether animation should happen only once
+              });
+            }, []);
+
     return (
         <section className="relative pt-28 grid-flow-row  grid lg:grid-cols-2 md:grid-cols-2   px-4 py-10 md:px-8 ">
             {/* Background Gradient */}
             <div className="relative z-10   ">
-                {/* <Image
-                    src="/suport.png"
-                    alt="Right Side Image"
-                    width={900}
-                    height={100}
-                    className=" w-full h-auto  "
-                    priority
-                /> */}
+                
             </div>
             <div
                 className="absolute inset-0 z-0"
@@ -22,7 +28,7 @@ export default function AboutSection() {
             ></div>
 
             {/* Overlay Image */}
-            <div className="absolute inset-0 z-0 ">
+            <div data-aos="zoom-in" className="absolute inset-0 z-0 ">
                 <Image
                     src="/suport.png" // Overlay image
                     alt="Overlay Background"
@@ -34,7 +40,7 @@ export default function AboutSection() {
             </div>
 
             {/* Content */}
-            <div className=" z-10    mt-10 lg:bottom-28 md:bottom-28 xl:bottom-28 2xl:bottom-28   relative   text-center lg:text-left  text-[#ffe6fe]">
+            <div data-aos="zoom-in-up" className=" z-10    mt-10 lg:bottom-28 md:bottom-28 xl:bottom-28 2xl:bottom-28   relative   text-center lg:text-left  text-[#ffe6fe]">
 
                <div className=''>
                <h1 className='text-lg text-start lg:text-3xl  text-[#e3dcffa1] '> 
