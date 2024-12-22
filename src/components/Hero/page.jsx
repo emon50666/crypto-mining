@@ -31,6 +31,7 @@ export default function HeroSection() {
           layout="fill" // Ensures full coverage
           objectFit="cover" // Makes the image cover the area
           priority
+         
           className="opacity-70" // Adjust transparency if needed
         />
       </div>
@@ -77,7 +78,7 @@ export default function HeroSection() {
 
       </div>
       {/* Right Image */}
-      <div className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
+      <div data-aos="fade-left" className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
         <Image
           src="/nep.png"
           alt="Right Side Image"
@@ -85,6 +86,7 @@ export default function HeroSection() {
           height={500}
           className="w-full h-auto  "
           priority
+          
         />
       </div>
     </section>
