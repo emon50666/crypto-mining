@@ -37,7 +37,7 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div data-aos="fade-right" className="relative z-10   mt-16 lg:mt-10 
+      <div data-aos="fade-right" className="relative z-10    lg:mt-10 
       text-center lg:text-left max-w-md text-[#ffe6fe]">
         <h1 className="text-3xl md:text-5xl font-bold capitalize mb-6"> <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD] bg-clip-text text-transparent">Navigate</span> the Future of 
           Trading with <span className="bg-gradient-to-r from-[#4639BC] via-[#ffe6fe] to-[#824FAD]  bg-clip-text text-transparent">
@@ -78,7 +78,7 @@ export default function HeroSection() {
 
       </div>
       {/* Right Image */}
-      <div data-aos="fade-left" className="relative z-10  hidden sm:hidden lg:block xl:block  w-full max-w-sm lg:max-w-md ">
+      <div data-aos="fade-left" className="relative z-10    w-full max-w-sm lg:max-w-md ">
         <Image
           src="/nep.png"
           alt="Right Side Image"
