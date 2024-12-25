@@ -24,7 +24,7 @@ To use this project, ensure you have the following installed:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/emon50666/crypto-mining
-cd crypto-flow
+cd crypto-currency
 
 ## ⚡  Install Dependencies
 npm install
