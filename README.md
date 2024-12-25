@@ -2,7 +2,7 @@
 
 **Crypto Flow** is a static landing page built with **Next.js** and **Tailwind CSS**. It's designed for cryptocurrency projects, offering a sleek and responsive design to showcase your product or service effectively.
 ---
-{Live Link } [ https://crypto-currency-eosin.vercel.app/]
+[Live Link ] ( https://crypto-currency-eosin.vercel.app/)
 
 ## ✨ Features
 - Responsive and modern design.
